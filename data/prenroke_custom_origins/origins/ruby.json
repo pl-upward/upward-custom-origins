@@ -1,0 +1,20 @@
+{
+    "name": "Ruby",
+    "description": "A kind girl.",
+    "powers": [
+        "prenroke_custom_origins:ruby/crescent_rose",
+        "prenroke_custom_origins:ruby/petal_burst",
+        "prenroke_custom_origins:ruby/silver_eyes_toggle",
+        "prenroke_custom_origins:ruby/glass_cannon",
+        "prenroke_custom_origins:ruby/sweet_tooth",
+        "prenroke_custom_origins:ruby/ruby_scale",
+        "prenroke_custom_origins:ruby/transgender_affinity",
+        "prenroke_custom_origins:ruby/two_handed",
+        "prenroke_custom_origins:ruby/eat_sugar",
+        "prenroke_custom_origins:ruby/silver_eyes"
+    ],
+    "icon": {
+        "item": "minecraft:netherite_hoe"
+    },
+    "impact": 3
+}

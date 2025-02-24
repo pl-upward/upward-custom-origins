@@ -1,0 +1,17 @@
+{
+    "name": "Cannibal",
+    "description": "A relative of humans with an appetite for flesh.",
+    "powers": [
+        "prenroke_custom_origins:cannibal/hunger_from_creatures",
+        "prenroke_custom_origins:cannibal/frenzy",
+        "prenroke_custom_origins:cannibal/eat_bone",
+        "prenroke_custom_origins:cannibal/poison_immune",
+        "prenroke_custom_origins:cannibal/only_meat",
+        "prenroke_custom_origins:cannibal/no_saturation",
+        "prenroke_custom_origins:cannibal/overfeed"
+    ],
+    "icon": {
+        "item": "minecraft:rotten_flesh"
+    },
+    "impact": 3
+}

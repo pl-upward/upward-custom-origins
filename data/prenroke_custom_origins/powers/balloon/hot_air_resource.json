@@ -1,0 +1,35 @@
+{
+    "name": "hot_air_resource",
+    "description": "resource",
+    "hidden": true,
+    "type": "origins:resource",
+    "min": 0,
+    "max": 30,
+    "start_value": 30,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 5
+    },
+    "min_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:toggle",
+                "power": "prenroke_custom_origins:balloon/toggle_hot_air"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "block.fire.extinguish",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    },
+    "max_action": {
+        "type": "origins:play_sound",
+        "sound": "friendsandfoes:entity.wildfire.hurt",
+        "volume": 1,
+        "pitch": 1
+    }
+}

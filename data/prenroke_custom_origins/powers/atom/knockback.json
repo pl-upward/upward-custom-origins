@@ -1,0 +1,7 @@
+{
+    "type": "extraorigins:modify_size",
+    "scale": 10000,
+    "scale_types": [
+        "pehkui:knockback"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "name": "Atomic Size",
+    "description": "You are incredibly, and I mean REALLY small.",
+    "type": "origins:multiple",
+    "motion": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.2,
+        "scale_types": [
+            "pehkui:motion"
+        ]
+    },
+    "block_reach": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.25,
+        "scale_types": [
+            "pehkui:block_reach"
+        ]
+    },
+    "arrow_size": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.05,
+        "scale_types": [
+            "pehkui:projectiles"
+        ]
+    },
+    "height": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.05,
+        "scale_types": [
+            "pehkui:height"
+        ]
+    },
+    "width": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.05,
+        "scale_types": [
+            "pehkui:width"
+        ]
+    },
+    "no_fall": {
+        "type": "extraorigins:modify_size",
+        "scale": 0,
+        "scale_types": [
+            "pehkui:falling"
+        ]
+    },
+    "less_health": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "multiply_total",
+            "value": -0.7
+        },
+        "update_health": true
+    }
+}

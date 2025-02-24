@@ -1,0 +1,19 @@
+{
+    "name": "Big Sis",
+    "description": "Slightly taller to fill your role as a big sister.",
+    "type": "origins:multiple",
+    "height": {
+        "type": "extraorigins:modify_size",
+        "scale": 1.2,
+        "scale_types": [
+            "pehkui:height"
+        ]
+    },
+    "width": {
+        "type": "extraorigins:modify_size",
+        "scale": 1.2,
+        "scale_types": [
+            "pehkui:width"
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Yang",
+    "description": "An older sister with anger issues.",
+    "powers": [
+        "prenroke_custom_origins:yang/ember_celica",
+        "prenroke_custom_origins:yang/firecracker",
+        "prenroke_custom_origins:yang/burn",
+        "prenroke_custom_origins:yang/explosive_shells",
+        "prenroke_custom_origins:yang/severed",
+        "prenroke_custom_origins:yang/anger_issues",
+        "prenroke_custom_origins:yang/yang_scale",
+        "prenroke_custom_origins:yang/yuri"
+    ],
+    "icon": {
+        "item": "minecraft:flint_and_steel",
+        "amount": 1
+    },
+    "impact": 3
+}

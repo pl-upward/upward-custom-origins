@@ -1,0 +1,55 @@
+{
+    "name": "Elytra Fligiht",
+    "description": "You can fly with an elytra, and press your ternary key to boost!",
+    "type": "origins:multiple",
+    "flight": {
+        "type": "origins:elytra_flight",
+        "render_elytra": false
+    },
+    "boost": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "z": 1,
+                    "space": "local",
+                    "client": true,
+                    "server": true
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "entity.firework_rocket.shoot",
+                    "volume": 1,
+                    "pitch": 1
+                }
+            ]
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 1
+        },
+        "key": {
+            "key": "key.origins.ternary_active"
+        }
+    },
+    "key2": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "fall"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "flyIntoWall"
+                }
+            ]
+        }
+    }
+}

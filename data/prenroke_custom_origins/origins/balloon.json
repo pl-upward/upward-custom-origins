@@ -1,0 +1,21 @@
+{
+    "name": "Balloon",
+    "description": "An extremely light creature that can store hot air like a balloon.",
+    "powers": [
+        "prenroke_custom_origins:balloon/hot_air",
+        "prenroke_custom_origins:balloon/toggle_hot_air",
+        "prenroke_custom_origins:balloon/dolphin_grace_toggle",
+        "prenroke_custom_origins:balloon/reduced_fall",
+        "prenroke_custom_origins:balloon/hollow_bones",
+        "prenroke_custom_origins:balloon/high_body_temp",
+        "prenroke_custom_origins:balloon/airflow_dependent",
+        "prenroke_custom_origins:balloon/hot_air_resource",
+        "prenroke_custom_origins:balloon/change_biome",
+        "prenroke_custom_origins:balloon/dolphin_grace"
+    ],
+    "icon": {
+        "item": "minecraft:white_wool",
+        "amount": 1
+    },
+    "impact": 2
+}

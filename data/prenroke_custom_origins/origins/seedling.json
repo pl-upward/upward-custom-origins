@@ -1,0 +1,17 @@
+{
+    "name": "Seedling",
+    "description": "A little seed person from a faraway land.",
+    "powers": [
+        "extraorigins:bite_sized",
+        "prenroke_custom_origins:keep_inventory",
+        "prenroke_custom_origins:seedling/dirt_eater_desc",
+        "prenroke_custom_origins:seedling/black_flash",
+        "origins:climbing",
+        "prenroke_custom_origins:seedling/dirt_eater"
+    ],
+    "icon": {
+        "item": "minecraft:sunflower",
+        "amount": 1
+    },
+    "impact": 3
+}

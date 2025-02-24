@@ -1,0 +1,16 @@
+{
+    "origins": [
+        "prenroke_custom_origins:seedling",
+        "prenroke_custom_origins:ruby",
+        "prenroke_custom_origins:yang",
+        "prenroke_custom_origins:earthen",
+        "prenroke_custom_origins:balloon",
+        "prenroke_custom_origins:creepass",
+        "prenroke_custom_origins:cannibal",
+        "prenroke_custom_origins:atom",
+        "prenroke_custom_origins:cognizant",
+        "prenroke_custom_origins:orc_warrior"
+    ],
+    "enabled": true,
+    "name": "origin"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "The Atom",
+    "description": "You are the size of an atom. You would die if you were any smaller.",
+    "powers": [
+        "prenroke_custom_origins:atom/atom_scale",
+        "prenroke_custom_origins:atom/invisibility",
+        "origins:climbing",
+        "prenroke_custom_origins:atom/phase_toggle",
+        "prenroke_custom_origins:atom/comical_house",
+        "prenroke_custom_origins:atom/phase",
+        "prenroke_custom_origins:atom/ride",
+        "prenroke_custom_origins:atom/elytra",
+        "prenroke_custom_origins:atom/knockback"
+    ],
+    "icon": {
+        "item": "minecraft:air",
+        "amount": 1
+    },
+    "impact": 3
+}

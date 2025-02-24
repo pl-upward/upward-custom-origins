@@ -1,0 +1,26 @@
+{
+    "name": "Low Density",
+    "description": "You take greatly reduced fall damage and are slightly smaller.",
+    "type": "origins:multiple",
+    "falling": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.3,
+        "scale_types": [
+            "pehkui:falling"
+        ]
+    },
+    "height": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.8,
+        "scale_types": [
+            "pehkui:height"
+        ]
+    },
+    "width": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.8,
+        "scale_types": [
+            "pehkui:width"
+        ]
+    }
+}

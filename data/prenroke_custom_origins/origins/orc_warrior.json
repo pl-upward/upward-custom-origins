@@ -1,0 +1,16 @@
+{
+    "name": "Orc Warrior",
+    "description": "An honor-bound warrior from a faraway land.",
+    "powers": [
+        "prenroke_custom_origins:orc_warrior/dual_wield",
+        "prenroke_custom_origins:orc_warrior/heroic_leap",
+        "prenroke_custom_origins:orc_warrior/size",
+        "prenroke_custom_origins:orc_warrior/sturdy_foundation",
+        "prenroke_custom_origins:orc_warrior/honor_bound"
+    ],
+    "icon": {
+        "item": "minecraft:netherite_axe",
+        "amount": 1
+    },
+    "impact": 3
+}

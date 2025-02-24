@@ -1,0 +1,33 @@
+{
+    "name": "Heroic Leap",
+    "description": "Leap through the air, dealing 6 damage to all enemies within 8 blocks. Gain speed 2 for 4 seconds afterwards. 15 second cooldown.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "y": 1,
+                "z": 2,
+                "space": "local_horizontal",
+                "client": true,
+                "server": true,
+                "set": true
+            },
+            {
+                "type": "origins:grant_power",
+                "power": "prenroke_custom_origins:orc_warrior/fall_smash",
+                "source": "0"
+            }
+        ]
+    },
+    "cooldown": 300,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 20
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

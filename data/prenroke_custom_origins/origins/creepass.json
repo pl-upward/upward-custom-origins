@@ -1,0 +1,20 @@
+{
+    "name": "Creeper...?",
+    "description": "A bizarre cross between a creeper and something else. One of your parents must have been really pent up...",
+    "powers": [
+        "prenroke_custom_origins:creepass/boom_punch",
+        "prenroke_custom_origins:creepass/kamikaze",
+        "prenroke_custom_origins:creepass/leap",
+        "prenroke_custom_origins:creepass/eat_gunpowder",
+        "prenroke_custom_origins:creepass/creepers_ignore",
+        "prenroke_custom_origins:creepass/no_fall_damage",
+        "prenroke_custom_origins:creepass/spawn_tnt",
+        "prenroke_custom_origins:creepass/light_tnt",
+        "prenroke_custom_origins:creepass/spawn_creeper",
+        "prenroke_custom_origins:keep_inventory"
+    ],
+    "icon": {
+        "item": "minecraft:creeper_head"
+    },
+    "impact": 3
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Hot Air",
+    "description": "Press your primary ability key to hold your breath, becoming lighter than air to swim through it like water!",
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "retain_state": true
+}

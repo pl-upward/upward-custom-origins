@@ -1,0 +1,9 @@
+{
+    "condition": {
+        "type": "origins:power_active",
+        "power": "prenroke_custom_origins:atom/phase_toggle"
+    },
+    "type": "origins:phasing",
+    "render_type": "blindness",
+    "view_distance": 10
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Lil Sis",
+    "description": "You are slightly smaller and take less fall damage.",
+    "type": "origins:multiple",
+    "ruby_height": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.8,
+        "scale_types": [
+            "pehkui:height"
+        ]
+    },
+    "ruby_width": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.8,
+        "scale_types": [
+            "pehkui:width"
+        ]
+    },
+    "reduce_fall": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.5,
+        "scale_types": [
+            "pehkui:falling"
+        ]
+    }
+}

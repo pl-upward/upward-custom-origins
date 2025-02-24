@@ -1,0 +1,18 @@
+{
+    "name": "Earthen",
+    "description": "A stony titan-forged being created by the Titanic Keepers to help shape the subterranean regions of the world.",
+    "powers": [
+        "prenroke_custom_origins:earthen/ingest_minerals",
+        "prenroke_custom_origins:earthen/no_food",
+        "prenroke_custom_origins:earthen/quiet_contemplation",
+        "prenroke_custom_origins:earthen/titan_forged",
+        "prenroke_custom_origins:earthen/dense_frame",
+        "prenroke_custom_origins:earthen/hated",
+        "prenroke_custom_origins:earthen/no_hunger"
+    ],
+    "icon": {
+        "item": "minecraft:amethyst_shard",
+        "amount": 1
+    },
+    "impact": 3
+}

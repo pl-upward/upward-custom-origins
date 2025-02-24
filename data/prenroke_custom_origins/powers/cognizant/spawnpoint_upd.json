@@ -1,0 +1,23 @@
+{
+    "name": "Checkpoint",
+    "description": "Every 5 minutes, the player's spawnpoint is updated.",
+    "type": "origins:action_over_time",
+    "interval": 6000,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:trigger_cooldown",
+                "power": "prenroke_custom_origins:cognizant/spawn_cooldown"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/spawnpoint"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/tellraw @p [\"\",{\"text\":\"Spawnpoint Updated.\",\"italic\":true,\"color\":\"dark_green\"}]"
+            }
+        ]
+    }
+}

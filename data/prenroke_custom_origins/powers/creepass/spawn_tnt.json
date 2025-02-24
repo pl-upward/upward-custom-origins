@@ -1,0 +1,30 @@
+{
+    "name": "Giving Birth",
+    "description": "Crouching has a chance to spawn tnt.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:chance",
+        "chance": 0.01,
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:tnt",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.tropical_fish.flop",
+                    "volume": 1,
+                    "pitch": 1
+                }
+            ]
+        }
+    },
+    "key": {
+        "key": "key.sneak"
+    }
+}

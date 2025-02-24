@@ -1,0 +1,57 @@
+{
+    "name": "Boom Punch",
+    "description": "Punching with a bare fist will blow both you and your target back.",
+    "type": "origins:multiple",
+    "knockback": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:empty"
+            }
+        },
+        "type": "extraorigins:modify_size",
+        "scale": 15,
+        "scale_types": [
+            "pehkui:knockback"
+        ]
+    },
+    "key1": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:empty"
+            }
+        },
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:actor_action",
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:add_velocity",
+                        "y": 0.4,
+                        "z": -8,
+                        "space": "local_horizontal",
+                        "client": true,
+                        "server": true
+                    },
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "entity.generic.explode",
+                        "volume": 1,
+                        "pitch": 1
+                    },
+                    {
+                        "type": "origins:spawn_particles",
+                        "particle": "explosion_emitter",
+                        "count": 1
+                    }
+                ]
+            }
+        },
+        "cooldown": 1
+    }
+}

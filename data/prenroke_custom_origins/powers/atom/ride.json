@@ -1,0 +1,15 @@
+{
+    "name": "Ride",
+    "description": "You can ride other players!",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    },
+    "type": "extraorigins:start_riding",
+    "key": {
+        "key": "key.use"
+    }
+}

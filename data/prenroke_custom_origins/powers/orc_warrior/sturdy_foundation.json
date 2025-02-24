@@ -1,0 +1,21 @@
+{
+    "name": "Sturdy Foundation",
+    "description": "You take 40% less knockback and fall damage.",
+    "type": "origins:multiple",
+    "falling": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.6,
+        "scale_types": [
+            "pehkui:falling"
+        ]
+    },
+    "knockback": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "generic.knockback_resistance",
+            "operation": "multiply_base",
+            "value": 0.4
+        },
+        "update_health": false
+    }
+}

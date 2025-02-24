@@ -1,0 +1,42 @@
+{
+    "name": "no_food",
+    "description": "prevents food",
+    "hidden": true,
+    "type": "origins:multiple",
+    "no_regen": {
+        "type": "origins:disable_regen"
+    },
+    "no_exhaustion": {
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "set_base",
+            "value": 0
+        }
+    },
+    "infinite_hunger": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<",
+            "compare_to": 20
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:feed",
+            "food": 1
+        }
+    },
+    "no_saturation": {
+        "condition": {
+            "type": "origins:saturation_level",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:exhaust",
+            "amount": 0.25
+        }
+    }
+}

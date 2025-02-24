@@ -1,0 +1,11 @@
+{
+    "name": "Honor Bound",
+    "description": "You cannot use bows or crossbows.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "prenroke_custom_origins:ranged_weapons"
+        }
+    }
+}

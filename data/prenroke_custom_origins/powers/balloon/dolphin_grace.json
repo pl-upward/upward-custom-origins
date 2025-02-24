@@ -1,0 +1,35 @@
+{
+    "name": "dolphin_grace_hidden",
+    "hidden": true,
+    "type": "origins:multiple",
+    "effect": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "prenroke_custom_origins:balloon/dolphin_grace_toggle"
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 1,
+        "duration_per_stack": 20,
+        "tick_rate": 10,
+        "effect": {
+            "effect": "minecraft:dolphins_grace",
+            "duration": 20,
+            "amplifier": 2,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        }
+    },
+    "hunger": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "prenroke_custom_origins:balloon/dolphin_grace_toggle"
+        },
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 1
+        }
+    }
+}

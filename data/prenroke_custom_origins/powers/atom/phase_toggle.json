@@ -1,0 +1,10 @@
+{
+    "name": "Phasing",
+    "description": "You can climb between the atoms in blocks to phase through them.",
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "retain_state": true
+}

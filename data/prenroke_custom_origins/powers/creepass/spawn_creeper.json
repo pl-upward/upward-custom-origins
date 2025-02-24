@@ -1,0 +1,40 @@
+{
+    "name": "Friends! Pt. 2",
+    "description": "Sneak and press the use key on the ground to spawn a creeper!",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:sneaking"
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:empty"
+                }
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:spawn_entity",
+        "entity_type": "minecraft:creeper",
+        "tag": "{ExplosionRadius:1, DeathLootTable:\"\"}",
+        "entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.tropical_fish.flop",
+            "volume": 1,
+            "pitch": 1
+        }
+    },
+    "cooldown": 600,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 22
+    },
+    "key": {
+        "key": "key.use"
+    }
+}

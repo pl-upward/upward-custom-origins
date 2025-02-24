@@ -1,0 +1,8 @@
+{
+    "name": "Stone Creation",
+    "description": "You are always well fed, but cannot consume food.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:food"
+    }
+}

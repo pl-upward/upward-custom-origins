@@ -1,0 +1,7 @@
+{
+    "name": "Invisibility",
+    "description": "You are an atom, far too small to observe for the naked human eye.",
+    "type": "origins:invisibility",
+    "render_armor": false,
+    "render_outline": true
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Overheat",
+    "description": "Superheat your body, increasing your swimming speed but consuming more hunger.",
+    "condition": {
+        "type": "origins:food_level",
+        "comparison": ">",
+        "compare_to": 6
+    },
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "retain_state": false
+}

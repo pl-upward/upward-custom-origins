@@ -1,0 +1,89 @@
+{
+    "name": "Dual Wield",
+    "description": "You can use two identical weapons to fight. This will deal 1.5x damage, but you will attack 30% slower by default.",
+    "type": "origins:multiple",
+    "attack_speed": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "generic.attack_speed",
+            "operation": "multiply_base",
+            "value": -0.3
+        },
+        "update_health": true
+    },
+    "damage_bonus": {
+        "type": "origins:modify_damage_dealt",
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "prenroke_custom_origins:weapons"
+                            }
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "offhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "prenroke_custom_origins:weapons"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 1.5
+        }
+    },
+    "dual_effects": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "prenroke_custom_origins:weapons"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "prenroke_custom_origins:weapons"
+                        }
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:delay",
+            "action": {
+                "type": "origins:swing_hand",
+                "hand": "OFF_HAND"
+            },
+            "ticks": 5
+        },
+        "cooldown": 1,
+        "key": {
+            "key": "key.attack"
+        }
+    }
+}

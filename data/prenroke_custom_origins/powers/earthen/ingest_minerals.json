@@ -1,0 +1,924 @@
+{
+    "name": "Ingest Minerals",
+    "description": "You can ingest minerals to gain various effects.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:if_else_list",
+        "actions": [
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:coal"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:coal"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:haste",
+                                    "duration": 9600,
+                                    "amplifier": 0,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:coal"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:coal_block"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:coal_block"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:haste",
+                                    "duration": 9600,
+                                    "amplifier": 1,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:coal_block"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:iron_ingot"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:iron_ingot"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:speed",
+                                    "duration": 9600,
+                                    "amplifier": 2,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:iron_ingot"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:copper_ingot"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:copper_ingot"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:jump_boost",
+                                    "duration": 9600,
+                                    "amplifier": 2,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:copper_ingot"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:gold_ingot"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:gold_ingot"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:absorption",
+                                    "duration": 2400,
+                                    "amplifier": 1,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:gold_ingot"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:emerald"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:emerald"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:instant_health",
+                                    "duration": 0,
+                                    "amplifier": 0,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:emerald"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:lapis_lazuli"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:lapis_lazuli"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "friendsandfoes:reach",
+                                    "duration": 9600,
+                                    "amplifier": 2,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:lapis_lazuli"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:redstone"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:redstone"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:night_vision",
+                                    "duration": 9600,
+                                    "amplifier": 0,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:redstone"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:diamond"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:diamond"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:regeneration",
+                                    "duration": 600,
+                                    "amplifier": 2,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:diamond"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:netherite_scrap"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:netherite_scrap"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:resistance",
+                                    "duration": 600,
+                                    "amplifier": 1,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:netherite_scrap"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:quartz"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:quartz"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:slow_falling",
+                                    "duration": 4800,
+                                    "amplifier": 0,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:quartz"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:amethyst_shard"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:amethyst_shard"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:strength",
+                                    "duration": 9600,
+                                    "amplifier": 0,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:amethyst_shard"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:glowstone_dust"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:glowstone_dust"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:glowing",
+                                    "duration": 1200,
+                                    "amplifier": 0,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:glowstone_dust"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:obsidian"
+                                }
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:obsidian"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_inventory",
+                            "inventory_type": "inventory",
+                            "entity_action": {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:fire_resistance",
+                                    "duration": 9600,
+                                    "amplifier": 0,
+                                    "show_particles": false,
+                                    "show_icon": true
+                                }
+                            },
+                            "item_action": {
+                                "type": "origins:consume",
+                                "amount": 1
+                            },
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:obsidian"
+                                }
+                            },
+                            "slots": [],
+                            "process_mode": "items",
+                            "limit": 1
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:block.lava.extinguish",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "cooldown": 100,
+    "key": {
+        "key": "key.use"
+    }
+}

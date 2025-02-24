@@ -1,0 +1,36 @@
+{
+    "name": "Sparky Touch",
+    "description": "You can light tnt with your bare hand.",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    },
+    "type": "origins:action_on_block_use",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:tnt"
+    },
+    "entity_action": {
+        "type": "origins:play_sound",
+        "sound": "entity.tnt.primed",
+        "volume": 1,
+        "pitch": 1
+    },
+    "block_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:set_block",
+                "block": "minecraft:air"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon tnt ~ ~ ~ {Fuse:40}"
+            }
+        ]
+    },
+    "action_result": "success"
+}

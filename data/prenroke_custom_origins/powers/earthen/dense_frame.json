@@ -1,0 +1,11 @@
+{
+    "name": "Dense Frame",
+    "description": "You sink in water and cannot use an elytra.",
+    "type": "origins:multiple",
+    "ignore_water": {
+        "type": "origins:ignore_water"
+    },
+    "elytra_flight": {
+        "type": "origins:prevent_elytra_flight"
+    }
+}

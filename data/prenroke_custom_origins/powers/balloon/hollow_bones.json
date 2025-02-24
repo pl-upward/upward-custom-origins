@@ -1,0 +1,38 @@
+{
+    "name": "Hollow Bones",
+    "description": "Your bones are hollow! You cannot sink in water, and have 2 less hearts than a human.",
+    "type": "origins:multiple",
+    "health": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "multiply_total",
+            "value": -0.2,
+            "name": "Origin modifier"
+        },
+        "update_health": true
+    },
+    "ignore_water": {
+        "type": "origins:walk_on_fluid",
+        "fluid": "minecraft:water"
+    },
+    "key2": {
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 1,
+        "duration_per_stack": 20,
+        "tick_rate": 10,
+        "effect": {
+            "effect": "minecraft:levitation",
+            "duration": 100,
+            "amplifier": 1,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    }
+}

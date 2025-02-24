@@ -1,0 +1,2 @@
+execute if score @s SelectedPoint < MaxPoint SelectedPoint run scoreboard players add Prenroke SelectedPoint 1
+execute if score @s SelectedPoint = MaxPoint SelectedPoint run scoreboard players set @s SelectedPoint 1

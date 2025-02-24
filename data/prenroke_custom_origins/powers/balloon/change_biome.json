@@ -1,0 +1,19 @@
+{
+    "name": "change_biome",
+    "description": "donnt let him",
+    "hidden": true,
+    "condition": {
+        "type": "origins:biome",
+        "condition": {
+            "type": "origins:temperature",
+            "comparison": "<=",
+            "compare_to": 0
+        }
+    },
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 1,
+        "name": "too cold"
+    }
+}

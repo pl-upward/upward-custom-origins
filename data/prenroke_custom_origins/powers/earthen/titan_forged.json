@@ -1,0 +1,41 @@
+{
+    "name": "Titan Forged",
+    "description": "As a creation of the titan keepers, your armor is more effective, you have no need for breathing, and you are smaller in stature.",
+    "type": "origins:multiple",
+    "armor": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.armor",
+            "operation": "multiply_total",
+            "value": 0.1,
+            "name": "Origin modifier"
+        },
+        "update_health": true
+    },
+    "small": {
+        "type": "extraorigins:modify_size",
+        "scale": 0.8,
+        "scale_types": [
+            "pehkui:height"
+        ]
+    },
+    "breathing": {
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 1,
+        "duration_per_stack": 100,
+        "tick_rate": 10,
+        "effect": {
+            "effect": "minecraft:water_breathing",
+            "duration": 100,
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    }
+}
